@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import Header from './components/Header';
 import FilterPanel from './components/FilterPanel';
 import InternshipCard from './components/InternshipCard';
-import { useInternships } from './hooks/useInternships';
+import { useInternships } from './hooks/useinternships';
 import styles from './App.module.css';
 
 function SkeletonCard() {
