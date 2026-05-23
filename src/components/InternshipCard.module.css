@@ -1,0 +1,82 @@
+.card {
+  background: #fff;
+  border: 1px solid #E8E8E8;
+  border-radius: 6px;
+  padding: 18px 20px 16px;
+  transition: box-shadow 0.18s;
+  animation: fadeUp 0.22s ease both;
+}
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(5px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+.card:hover { box-shadow: 0 3px 16px rgba(0,0,0,0.09); }
+
+.row { display: flex; align-items: flex-start; gap: 16px; }
+
+/* ── LEFT ── */
+.left { flex: 1; min-width: 0; display: flex; flex-direction: column; gap: 5px; }
+
+.title {
+  font-size: 15px; font-weight: 700; color: #1A1A2E;
+  line-height: 1.35; transition: color 0.15s; display: block;
+}
+.title:hover { color: #008BFF; }
+
+.companyLine { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
+.company { font-size: 13.5px; color: #444; }
+.activeBadge {
+  font-size: 11.5px; font-weight: 500;
+  color: #00875A; background: #E6F7EE;
+  border: 1px solid #B7EBD0;
+  padding: 1px 9px; border-radius: 20px;
+  line-height: 1.6;
+}
+
+/* Info line */
+.infoLine {
+  display: flex; align-items: center; gap: 7px;
+  flex-wrap: wrap; margin-top: 2px;
+}
+.infoChunk { display: flex; align-items: center; gap: 4px; font-size: 13px; color: #444; }
+.sep { color: #BABABA; font-size: 13px; }
+.ico { flex-shrink: 0; display: block; }
+
+/* Desc line */
+.descLine {
+  display: flex; align-items: center; gap: 4px;
+  font-size: 12.5px; color: #666;
+}
+
+/* Skills */
+.skillsLine {
+  display: flex; align-items: center; flex-wrap: wrap; gap: 5px;
+  margin-top: 3px;
+}
+.skill { font-size: 12.5px; color: #666; }
+.skillDot { font-size: 12px; color: #AAA; }
+
+/* Footer */
+.footer { display: flex; align-items: center; gap: 10px; margin-top: 4px; flex-wrap: wrap; }
+.postedChunk { display: flex; align-items: center; gap: 4px; font-size: 12.5px; color: #888; }
+.postedToday { color: #00C96B; }
+.partDot { font-size: 12.5px; color: #888; }
+.ppoBadge {
+  font-size: 11.5px; font-weight: 500;
+  color: #B45309; background: #FEF3C7;
+  padding: 1px 9px; border-radius: 20px;
+}
+
+/* ── RIGHT: LOGO ── */
+.right { flex-shrink: 0; align-self: flex-start; margin-top: 2px; }
+
+.logo {
+  width: 54px; height: 54px; border-radius: 5px;
+  object-fit: contain; border: 1px solid #EBEBEB;
+  background: #FAFAFA; padding: 4px; display: block;
+}
+.logoFallback {
+  width: 54px; height: 54px; border-radius: 5px;
+  border: 1px solid #E0E0E0; background: #F5F7FA;
+  display: flex; align-items: center; justify-content: center;
+}

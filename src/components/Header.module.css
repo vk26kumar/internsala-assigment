@@ -1,0 +1,45 @@
+.header {
+  background: #fff;
+  border-bottom: 1px solid #E8E8E8;
+  position: sticky; top: 0; z-index: 200;
+}
+.inner {
+  max-width: 1200px; margin: 0 auto; padding: 0 24px;
+  height: 60px; display: flex; align-items: center; gap: 0;
+}
+
+/* Logo */
+.brand { display: flex; align-items: center; gap: 6px; margin-right: 32px; flex-shrink: 0; }
+.logoIcon { width: 26px; height: 26px; }
+.logoWord1 { font-size: 17px; font-weight: 900; color: #008BFF; letter-spacing: 0.3px; line-height: 1; }
+.logoWord2 { font-size: 17px; font-weight: 900; color: #1A1A2E; letter-spacing: 0.3px; line-height: 1; }
+
+/* Nav */
+.nav { display: flex; align-items: stretch; gap: 0; flex: 1; height: 100%; }
+.navLink {
+  display: flex; align-items: center; gap: 4px; padding: 0 14px;
+  font-size: 14px; font-weight: 500; color: #444; position: relative;
+  transition: color 0.15s; border-bottom: 3px solid transparent;
+  white-space: nowrap;
+}
+.navLink:hover { color: #008BFF; }
+.active { color: #008BFF; font-weight: 600; border-bottom-color: #008BFF; }
+.caret { width: 9px; height: 9px; opacity: 0.55; flex-shrink: 0; }
+.offerPill {
+  font-size: 9.5px; font-weight: 800; background: #FF6B00;
+  color: #fff; padding: 2px 5px; border-radius: 3px; letter-spacing: 0.3px;
+}
+
+/* Right actions */
+.right { display: flex; align-items: center; gap: 8px; margin-left: auto; }
+.iconBtn { padding: 5px; border-radius: 4px; display: flex; align-items: center; justify-content: center; opacity: 0.75; transition: opacity 0.15s; }
+.iconBtn:hover { opacity: 1; background: #F5F5F5; }
+.avatar {
+  width: 33px; height: 33px; border-radius: 50%;
+  background: #008BFF; color: #fff;
+  font-size: 14px; font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+}
+.caretAvatar { width: 9px; height: 9px; opacity: 0.5; }
+
+@media (max-width: 700px) { .nav { display: none; } }
